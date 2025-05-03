@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=800">
+	<title>MFA logger</title>
+	<link rel="shortcut icon" href="https://mi.metrc.com/Public/icons/favicon.ico">
+	<link href="https://mi.metrc.com/Public/stylesheets/bootstrap/bootstrap.min.css" rel="stylesheet" />
+	<link href="https://mi.metrc.com/Public/stylesheets/bootstrap/bootstrap-overrides.css" rel="stylesheet" />
+<!-- 	<link href="https://mi.metrc.com/Public/stylesheets/jquery/validationEngine.jquery.css" rel="stylesheet" /> -->
+	<link href="https://mi.metrc.com/Public/stylesheets/site.css" rel="stylesheet" />
+	<link href="https://mi.metrc.com/Public/stylesheets/anonymous.css" rel="stylesheet" />
+	<style>
+		#modal-div {
+			top: 220px;
+		}
+		body {
+			overflow:hidden;
+		}
+	</style>
+</head>
+<body>
+	<header class="page-header">
+		<div class="page-logo">
+			<img alt="metrc" title="metrc - Michigan" src="https://mi.metrc.com/Public/images/logo-large.png" />
+			<span class="installation-title installation-title-large">...MFA Skipper Tool</span>
+		</div>
+	</header>
+	<div id="body_content" class="container-fluid">
+		<div class="modal" id="modal-div" class="login-form blackgray-gradient shadow centered span17">
+			<form id="login-form" class="container-fluid">
+				<input id="file-input" type="file" value="Metrc-MI-Industry-BackupCodes.txt" />
+				<label for="username">username</label>
+				<input type="text" name="username" id="username-input" />
+				<label for="password">password</label>
+				<input type="password" name="password" id="password-input" />
+				<div id="embed-div">
+					<embed id="embedded-codes" src="Metrc-MI-Industry-BackupCodes.txt" style="display: none;"></embed>
+				</div>
+				<input value="Skip MFA and Login" class="btn-primary" id="submit-button" />
+			</form>
+			<ul>
+				<li>Make sure you save backup codes to same folder with this page</li>
+				<li>Make sure and overwrite backup codes to same filename when downloaded</li>
+				<li>This only currently works with one-user one-machine, given the restrictions</li>
+			</ul>
+		</div>
+	</div>
+
+	<!--<script>
+		// function displayIp(myIp) {
+		// 	var ipLabel = document.getElementById("ip_label");
+		// 	ipLabel.text = myIp;
+		// }
+	</script> -->
+
+<!--			<script src="https://mi.metrc.com/Public/javascripts/vendor/es5-shim.min.js"></script>
+		<script src="https://mi.metrc.com/Public/javascripts/vendor/consolelog.min.js"></script>-->
+
+		<!-- HERE IS WHERE WE ADD OUR OWN LOGIC -->
+		<script src="https://mi.metrc.com/Public/javascripts/vendor/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="./controller.js"></script>
+
+	
+</body>
+</html>
