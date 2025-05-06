@@ -77,6 +77,8 @@ Want to collaborate or learn more?
 - **Upwork:** [My Upwork Profile](https://www.upwork.com/freelancers/~01527a09cdcfd75500)  
 - **Website:** [steinunlimited.com](https://steinunlimited.com/)
 
+--- 
+
 ## 🌐 My GitHub Portfolio
 
 Check out my other highlighted projects:  
